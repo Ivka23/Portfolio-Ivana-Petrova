@@ -1,17 +1,20 @@
-import '../styles/modern-normalize.css';
-import '../styles/style.css';
-import '../styles/components/header.css';
-import '..styles/components/hero.css';
-import '..styles/components/about.css';
-import '..styles/components/featured.css';
-import '..styles/components/work.css';
-import '..styles/components/contacts.css';
-import '..styles/components/footer.css';
-import '..styles/components/mobile-nav.css';
-import '../styles/utils.css';
+"use strict";
 
-import mobileNav from './utils/mobile-nav';
-
-mobileNav();  
-
-
+require("../styles/modern-normalize.css");
+require("../styles/style.css");
+require("../styles/components/header.css");
+require("../styles/components/hero.css");
+require("../styles/components/about.css");
+require("../styles/components/featured.css");
+require("../styles/components/work.css");
+require("../styles/components/contact.css");
+require("../styles/components/footer.css");
+require("../styles/components/mobile-nav.css");
+require("../styles/utils.css");
+var _mobileNav2 = _interopRequireDefault(require("./utils/mobile-nav"));
+var _darkMode = _interopRequireDefault(require("./utils/dark-mode"));
+var _lazyLoading = _interopRequireDefault(require("./utils/lazy-loading"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+(0, _mobileNav2["default"])();
+(0, _darkMode["default"])();
+(0, _lazyLoading["default"])();

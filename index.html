@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="My Portfolio website" />
+    <meta name="keywords" content="web design, html, css, js" />
+    <title>Bussiness Accelerator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/components/hero.css">
+    <link rel="stylesheet" href="styles/components/about.css">
+    <link rel="stylesheet" href="styles/components/featured.css">
+    <link rel="stylesheet" href="styles/components/work.css">
+    <link rel="stylesheet" href="styles/components/contacts.css">
+    <link rel="stylesheet" href="styles/components/footer.css">
+    <link rel="stylesheet" href="styles/components/mobile-nav.css">
+    <script src="portfolio/src/utils/mobile-nav.js/"> </script>
+   </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">За мен</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Специално за теб</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Свържи се с мен</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="header__sun"
+            >
+              <svg
+                xmlns="http://www.w3.og/2000/svg"
+                viewBox="0 0 24 24"r
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Кликни ме</a>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!--Mobile Navigation--> 
+    <div class="mobile-nav">
+<nav>
+  <ul class="mobile-nav__menu">
+<li><a class="mobile-nav__link" href="#about">About</a>
+</li>
+<li><a class="mobile-nav__link" href="#featured">Work</a>
+</li>
+<li><a class="mobile-nav__link" href="#contact">Contact</a>
+</li>
+<li class="mobile-nav__link-line"></li>
+<li>
+  <button
+ aria-label="theme-toggle btn"
+ id="theme-toggle"   class="mobile-nav__sun"
+ >
+<svg
+    xmlns="http://www.w3.og/2000/svg"
+    viewBox="0 0 24 24"
+  fill="currentColor">
+    <path
+     d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+    />
+ </svg>
+ </button>
+</li>
+<li> <a class="mobile-nav__btn btn" href="#"> Resume</a>
+</li>
+  </ul>
+</nav>
+
+    </div>
+
+    <!--End of Mobile Navigation-->
+  <main> 
+<section class="hero container">
+<img class="hero__img" src="./public/hero.jpg" alt="Profile picture">
+<h2 class="hero__subtitle">Здравей, Аз съм Ивана👋</h2>
+<h1 class="hero__title" style="font-size: 50px">Виж как направих 4 милиона гледания за 2 месеца без платени реклами като <br>
+   Социален мениджър & Front-End DEVELOPER.</h1>
+<p class="hero__description">
+  Моята страст е <strong>създаването на сайтове и реклами </strong>  за да имаш повече клиенти. <strong> С две години опит като Фриилансър и социален мениджър  </strong> съм изключително запалена по бизнеса, копирайтинга, фитнеса и технологиите. Ако искаш иновация за <strong> бизнеса ти</strong> разгледай повече.
+</p>
+<a class="hero__btn btn" href="#">Кликни ме</a>
+</section>
+<section id="about" class="about container section">
+  <div class="about__content">
+<h2 class="about__title">За мен</h2>
+<p class="about__description">Здравей, аз съм Ивана,<strong> Социален мениджър и Front-End dev - правя сайтове</strong> и живея във Велико Търнов. Обичам да правя реклами, бизнес идеи, сайтове, да тренирам много, да уча и повтарям процеса.</p>
+<p class="about__description">Клиенти и приятели ми казват че съм обсебена от тези неща и това е вярно, аз съм много дисциплинирана и насочена в една посока - успех и щастие.</p>
+<p class="about__description">Работя с няколко малки бизнеса, клиенти и собствени проекти и продукти <a> като развивам техните бизнеси и привличам повече клиенти с минимален бюджет за реклама</a> в интернет.</p>
+<hr class="about__hr"/>
+<h3 class="about__subtitle">С какво мога да работя?
+</h3>
+<div class="about__ul-container">
+  <ul class="about__ul">
+    <li class="about__list" >Програмни езици - C#, C++ </li>
+    <li class="about__list"  >Изработка на сайтове - HTML, CSS, Bootstrap</li>
+    <li class="about__list" > Обработка на видеа - Premiere Pro, After Effects, Capcut, Canva</li>
+    </ul>
+    <ul class="about__ul">
+      <li class="about__list"  >Изработка на продажбена страница -  Convert Builder, Systeme.io </li>
+      <li class="about__list" >Photoshop, Figma</li>
+      <li class="about__list" >Социални мрежи - Meta Suite, Facebook ads, Analytics</li>
+    </ul>
+</div>
+  </div>
+  <div class="about__img-wrapper">
+    <img class="about__img" src="public/about.jpg" alt="Profile picture">
+  </div>
+</section>
+<section id="featured" class="featured container section">
+<h3 class="featured__subtitle">Не пропускай това</h3>
+<div class="featured__wrapper">
+  <h2 class="featured__title">Развий бизнеса си с по-малко капитал и привлечи <strong>ПОВЕЧЕ КЛИЕНТИ</strong>- Прочети как</h2>
+  <a class="featured__link" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+    </svg>  
+  </a>
+</div>
+<p class="featured__description"> Ще привлечем повече клиенти с <strong>органично развитие на твоите социални мрежи, без платени реклами</strong>, с добър копирайтинг, опростен план и добра оферта
+</p>
+<div class="featured__info-container">
+  <div>
+    <h3 class="featured__label">Ето с какво ще стане това, за което ти <strong>НЕ даваш излизшни пари по рекламни агенции и реклами.</strong> </h3>
+    <ul class="featured__tech-stack">
+      <li class="featured__info" >Органично развитие - Capcut, Premiere Pro, ChatGPT4 платена версия, Твоите социални мрежи, Convert Builder</li>
+      <li  class="featured__info">Photoshop, Meta Suite, Твои собствен сайт, направен от мен ако поискаш такъв. </li>
+   
+    </ul>
+  </div>
+  <div>
+    <h3 class="featured__label">Виж резултатите на клиентите ми</h3>
+    <p class="featured__info">Само за два месеца 👉  </p>
+  </div>
+  <div>
+    <h3 class="featured__label">Виж моите проекти тук 👇</h3>
+    <p class="featured__info"> Мои проекти за клиенти.</p>
+  </div>
+</div>
+<div class="featured__img-container">
+  <div class="featured__img-wrapper">
+    <img src="public/1.png" alt="Shieda Quotes">
+  </div>
+  <div class="featured__img-wrapper">
+    <img src="public/2.png" alt="Shieda Quotes">
+  </div>
+  <div class="featured__img-wrapper">
+    <img src="public/3.png" alt="Shieda Quotes">
+  </div>
+  <div class="featured__img-wrapper">
+    <img src="public/4.png" alt="Shieda Quotes">
+  </div>
+  <div class="featured__img-wrapper">
+    <img src="public/website clone project- Instagram.png" alt="Shieda Quotes">
+  </div>
+  <div class="featured__img-wrapper">
+    <img src="public/fiverr project.png" alt="Shieda Quotes">
+  </div>
+  <div class="featured__img-wrapper">
+    <img src="public/youtube clone project.png" alt="Shieda Quotes">
+  </div>
+  <div class="featured__img-wrapper">
+    <img src="public/post.png" alt="Shieda Quotes">
+  </div>
+</div>
+
+</section>
+<section class="work container section">
+  <h2 class="work__title">Моите проекти досега</h2>
+  <p class="work__description"> Резултати на клиенти и продукти, които съм правила за тях
+  </p>
+  <div class="work__container">
+ <!-- Project 1-->
+ <h3 class="work__project-title">Тикток Акаунт</h3>
+ <div class="work__img-wrapper work__image1">
+   <img src="public/4.png" alt="Project One"/>
+ </div>
+  <div class="work__project work__content1">
+    <h3 class="work__project-subtitle">@Revzz - вайръл акаунт за 2 месеца в Тикток</h3>
+   <p class="work__project-description1">Факти за коли, видеа за коли, снимане на събития и суперколи.
+   </p>
+   <p class="work__project-description2">
+     Направих 4 милиона гледания за времето от 22.06 - 20.07 2024. Развивам този акаунт абсолютно от нулата, без платени реклами, абсолютно <strong>ОРГАНИЧНО</strong>
+   </p>
+   <a class="btn work__project-btn" href="https://www.tiktok.com/@revzzofficial?lang=en">Виж тук</a>
+  </div>
+
+  <!-- Project 2-->
+  <h3 class="work__project-title">Сайт за първото дигитално събитие на ВТУ "Св. св. Кирил и Методий"</h3>
+  <div class="work__img-wrapper work__image2">
+    <img src="public/website clone project- Instagram.png" alt="Project Two"/>
+  </div> 
+  <div class="work__project work__content2">
+    <h3 class="work__project-subtitle">Beyond Digital Skills</h3>
+   <p class="work__project-description1"> Създадох първия сайт за Beyond Digital Skills като част от клуба на младия програмист "Джон Атанасов" - Дигитално събитие, на което участваха IBM, Smarty Kids и Боти Диманов.  </p>
+   
+   <a class="btn work__project-btn" href="https://beyonddigitalskills.netlify.app/#">Виж тук</a>
+  </div>
+<!-- Project 3-->
+<h3 class="work__project-title">Фриилансър- Изработка на Рекламни видеа, Банери, стикери, постове. </h3>
+<div >
+ <video alt="Project Three" controls> <source src="public/video.mp4" type="video/mp4"> 
+  Your browser does not support the video tag. </video>
+</div> 
+<div class="work__project work__content3">
+  <h3 class="work__project-subtitle">Фриилансър- Изработка на Рекламни видеа, Банери, стикери, постове. </h3>
+<p class="work__project-description1">
+</p>
+<p class="work__project-description2">
+ Имам 2 години опит като Социален мениджър и Фриилансър. Работила съм за фирми като Fildecor, Case4y.shop, TTec и индивидуални малки бизнеси.
+</p>
+<a class="btn work__project-btn" href="#">Кликни</a>
+</div>
+<!-- Project 4-->
+<h3 class="work__project-title">Рекламни Банери за социални мрежи</h3>
+<div class="work__img-wrapper work__image4">
+ <img src="public/project-4.png" alt="Project Four"/>
+</div> 
+<div class="work__project work__content4">
+  <h3 class="work__project-subtitle">Рекламни Банери за социални мрежи</h3>
+<p class="work__project-description1"> Реклама за малък бизнес на българи в Лондон
+ 
+</p>
+<p class="work__project-description2">
+Банерите влизат в пакет заедно с <strong>Органичното разрастване на акаунти.</strong>
+</p>
+<a class="btn work__project-btn" href="#">Кликни</a>
+</div>
+<!-- Project 5-->
+<h3 class="work__project-title">Project Five</h3>
+<div class="work__img-wrapper work__image5">
+ <img src="public/project-5.png" alt="Project "/>
+</div> 
+<div class="work__project work__content5">
+  <h3 class="work__project-subtitle">Изработка на рекламни модели на физически и дигитални продукти</h3>
+<p class="work__project-description1"> Корица на книга за мой клиент, който направи 5 хил. лв от тази книга.
+</p>
+<p class="work__project-description2">
+Изработката на такъв влиза в пакета за <strong>Органично разрастване и рекламни материали.</strong>
+</p>
+<a class="btn work__project-btn" href="#">Кликни</a>
+</div>
+<!-- Project 6-->
+<h3 class="work__project-title">Project Six</h3>
+<div>
+ <video src="public/реклама.mp4" alt="Project Six" controls> 
+
+ </video>
+</div> 
+<div class="work__project work__content6">
+  <h3 class="work__project-subtitle">Изработка на поръчкови стикери и <strong>Анимирани светлини за твоята кола (Очаквайте скоро)</strong></h3>
+<p class="work__project-description1"> Имаме доста доволни клиенти със стикери на своята кола, като сме Ви приготвили <strong>нещо още по-предизвикателно и впечатляващо</strong> за <strong>Вашият автомобил.
+</strong></p>
+<p class="work__project-description2">
+ 
+</p>
+<a class="btn work__project-btn" href="#">Кликни</a>
+</div>
+  </div>
+</section>
+<section id="contact" class="contact container section">
+  <h2 class="contact__title">Свържете се с мен.</h2>
+  <p class="contact__description">Ако притежавате малък бизнес или искате да изградите бизнес онлайн, Свържете се с мен на имейл: <strong>crosshairs133@gmail.com</strong> или ми пишете в Тикток <strong>@Revzz</strong> или в Instagram като <strong>натиснете бутона по-долу</strong>👇</p>
+  <a class="contact__btn btn"
+  href="https://www.instagram.com/ivka_shieda/?hl=bg" target="_blank">Свържете се с мен</a>
+</section>
+ <footer class="footer container section">
+<h3 class="footer__title">~Ивана Петрова~</h3>
+ </footer>
+</main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
